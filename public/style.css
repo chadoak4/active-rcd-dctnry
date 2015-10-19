@@ -1,0 +1,16 @@
+body {
+  background-color: #396190;
+  font-family: 'oswald';
+  color: #ffffff;
+}
+
+header .title {
+  font-size: 40px;
+
+}
+
+ul li {
+  list-style-type: none;
+  color: red;
+  padding-left: 30px;
+}

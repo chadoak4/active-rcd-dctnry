@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
+    <title>Simple Dictionary</title>
+  </head>
+  <body>
+    <header>
+      <span class='title'>
+        Welcome To Simple Dictionary!
+      </span>
+      <nav>
+        <span class="right">
+          <a href="/add"> Add A Word </a>
+        </div>
+        <span class="right">
+          <form method="post" action="/search">
+          <input name="q">
+          <button type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+  <body>
+    <ul>
+      <% Definition.all.each do |entry| %>
+      Word:
+      <li>
+      <%= entry.word %>
+      </li>
+      Definition:
+      <li>
+      <%= entry.meaning %>
+      </li>
+      <div class='line'>____________________________________________________________________________________</div>
+      <br>
+      <% end %>
+    </ul>
+  </body>
+</html>

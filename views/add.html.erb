@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <form method="POST" action="/save">
+      <ul>
+        Word:<input name="word"/>
+        Definition: <input name="definition"/>
+      </ul>
+      <button type="submit">Submit</button>
+    </form>
+    <a href="/"> Back </a>
+  </body>
+</html>
